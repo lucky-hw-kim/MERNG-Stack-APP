@@ -74,6 +74,8 @@ const AddClientModal = () => {
             <div className="modal-body">
               <form onSubmit={onSubmit}>
                 <div className="mb-3">
+                <div className='mb-3'>
+                <label className='form-label'>Name</label>
                   <input
                     placeholder="Name"
                     type="text"
@@ -81,8 +83,10 @@ const AddClientModal = () => {
                     id="name"
                     vale={name}
                     onChange={(e) => setName(e.target.value)}
-                  />
-                                    <input
+                  /></div>
+                  <div className='mb-3'>
+                  <label className='form-label'>Email</label>
+                    <input
                     placeholder="Email"
                     type="text"
                     className="form-control"
@@ -90,15 +94,19 @@ const AddClientModal = () => {
                     vale={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
-                                    <input
+                  </div>
+                  <div className='mb-3'>
+                  <label className='form-label'>Phone</label>
+                    <input
                     placeholder="Phone"
                     type="text"
                     className="form-control"
                     id="phone"
                     vale={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                  />
-                </div>
+                    />
+                    </div>
+                    </div>
                 <button className="btn btn-secondary" 
                 data-bs-dismiss="modal"
                 type="submit">
